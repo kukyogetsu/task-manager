@@ -35,7 +35,7 @@ export default function SearchBar({ search, setSearch, statusFilter, setStatusFi
         ))}
       </div>
       <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-        {[["", "Any Date"], ["today", "📅 Today"], ["week", "🗓 This Week"], ["overdue", "⚠️ Overdue"]].map(([val, label]) => (
+        {[["", "Any Date"], ["today", " Today"], ["week", " This Week"], ["overdue", " Overdue"]].map(([val, label]) => (
           <button key={val} className="filter-btn" onClick={() => setDateFilter(val)}
             style={btnStyle(dateFilter === val, "#ef4444")}>{label}</button>
         ))}
